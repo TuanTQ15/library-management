@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:scrollbarSize="4dp"
+    tools:context=".activity.DocGia.ThemDocGiaActivity">
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/useradd"
+        android:hint="                       " />
+
+    <EditText
+        android:id="@+id/reg_Ten"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/btground"
+        android:hint="Tên"
+        android:inputType="textCapWords"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/reg_mob"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/btground"
+        android:hint="Số Điện Thoại"
+        android:inputType="phone"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/btground"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:elevation="0dp" />
+
+        <TextView
+            android:id="@+id/add_ngaySinh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="Ngày Sinh"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/add_btnNgaySinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/transparent"
+            android:elevation="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_calendar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="clip_horizontal|fill">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btground"
+            android:gravity="center"
+            android:text="Giới Tính"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/add_rdGrGoiTinh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/add_rdNam"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/add_rdNu"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Nữ"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/bground"
+        android:text="Xác Nhận" />
+
+
+</LinearLayout>

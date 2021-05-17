@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:scrollbarSize="4dp"
+    tools:context=".activity.DocGia.ThemDocGiaActivity">
+
+
+    <ImageView
+        android:id="@+id/add_imageView"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/bookview" />
+
+    <EditText
+        android:id="@+id/add_TenSach"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/btground"
+        android:hint="Tên Sách"
+        android:inputType="textCapWords"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/btground"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/add_Link"
+            android:layout_width="303dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/add_imageBook"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/transparent"
+            android:elevation="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add_image" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_so_luong_sach"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/btground"
+        android:gravity="center"
+        android:hint="Số Lượng"
+        android:inputType="phone"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_addBook"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/bground"
+        android:text="Xác Nhận" />
+
+
+</LinearLayout>
